@@ -11,7 +11,7 @@
   such as (master version changes rapidly so choose a tag):
 
   http://github.com/visionmedia/jspec/tree/master%2Flib%2Fjspec.js?raw=true
-  http://github.com/visionmedia/jspec/tree/master%2Flib%2Fcss.js?raw=true
+  http://github.com/visionmedia/jspec/tree/master%2Flib%2Fjspec.css?raw=true
 
 == Examples
 
