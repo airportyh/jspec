@@ -1,52 +1,26 @@
 
-with (JSpec('first suite')) {
-	before (function(){
-		console.log('before');            
-	});                                 
-	                                    
-	before_each (function(){            
-		console.log('before each');       
-	});                                 
-	                                    
-	it ('Should pass', function(){      
-		'test'.should_equal('test');      
-	});                                 
-	                                    
-	it ('Should fail', function(){      
-		'test'.should_not_equal('test');  
-	});                                 
-                                      
-	after (function(){                  
-		console.log('after');             
-	});                                 
-	                                    
-	after_each (function(){             
-		console.log('after each');        
-	});                                 
+with (JSpec('suite 1')) {
+	it ('Should pass', function(){
+		'foo'.should_equal('foo');
+	});
+	
+	it ('Should fail', function(){
+		'foo'.should_equal('bar');
+	});
 }
 
-with (JSpec('second suite')) {
-	before (function(){
-		console.log('before');            
-	});                                 
-	                                    
-	before_each (function(){            
-		console.log('before each');       
-	});                                 
-	                                    
-	it ('Should pass', function(){      
-		'test'.should_equal('test');      
-	});                                 
-	                                    
-	it ('Should fail', function(){      
-		'test'.should_not_equal('test');  
-	});                                 
-                                      
-	after (function(){                  
-		console.log('after');             
-	});                                 
-	                                    
-	after_each (function(){             
-		console.log('after each');        
-	});                                 
+with (JSpec('suite 2')) {
+	it ('Should fail', function(){
+		'hello'.should_equal('world');
+	});
+	
+	it ('Should fail', function(){
+		v = 0;
+		v.should_equal(10);
+	});
+	
+	it ('Should fail', function(){
+		v = ['a', 'b', 'c'];
+		v.length.should_not_equal(3);
+	});
 }
