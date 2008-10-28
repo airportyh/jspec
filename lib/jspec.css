@@ -6,5 +6,35 @@
 	border: none;
 }
 #jspec-report {
+	padding: 60px;
 	font: 14px "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
+}
+#jspec-report .heading span {
+	margin-right: 15px;
+}
+#jspec-report .heading em {
+	font-weight: bold;
+	font-style: normal;
+}
+#jspec-report .heading span.passes em {
+	color: green;
+}
+#jspec-report .heading span.failures em {
+	color: red;
+}
+#jspec-report h2 {
+	margin-top: 25px;
+	font-size: 18px;
+}
+#jspec-report p {
+	margin-top: 5px;
+	padding-left: 20px;
+}
+#jspec-report p.pass {
+	background: url(images/sprites.png) -12px -12px no-repeat;
+	color: green;
+}
+#jspec-report p.fail {
+	background: url(images/sprites.png) -12px -54px no-repeat;
+	color: red;
 }
