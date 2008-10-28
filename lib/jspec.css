@@ -1,0 +1,10 @@
+
+#jspec-report * {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+}
+#jspec-report {
+	font: 14px "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
+}
