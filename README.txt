@@ -35,9 +35,8 @@
 	
 == TODO
 
-	* host it so people put uri in script tag... (from github)
 	* textmate bundle
-	* screencast / vision page
+	* screencast / page on vision-media.ca
 	
 == Copyright 
 
