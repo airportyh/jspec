@@ -1,4 +1,10 @@
 
+=== 0.0.2 / 2008-10-28
+
+* 1 Bug Fix:
+
+  * Fixed typo in documentation for pointing to the master repo
+
 === 0.0.1 / 2008-10-28
 
   * Initial release
