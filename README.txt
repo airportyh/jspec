@@ -1,7 +1,7 @@
 
 = JSpec
 
-  JSpec is a minimalistic JavaScript test driven development framework,
+  JSpec is a minimalistic JavaScript behavior driven development framework,
   providing both simple installation as well as usage.
 
 == Installation
@@ -35,6 +35,14 @@
 	
 == TODO
 
+	* add should_have(count, prop)
+	* add should_not_have(count, prop)
+	* add should_include
+	* add should_not_include
+	* add should_match
+	* add should_not_match
+	* add should_fail(message || 'TODO')
+	* add some kind of progress indicator (bar or spinner)
 	* textmate bundle
 	* screencast / page on vision-media.ca
 	
