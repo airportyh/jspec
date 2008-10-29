@@ -13,6 +13,8 @@
   http://github.com/visionmedia/jspec/tree/master%2Flib%2Fjspec.js?raw=true
   http://github.com/visionmedia/jspec/tree/master%2Flib%2Fjspec.css?raw=true
 
+  NOTE: this method may be slow, and images will not display.
+
 == Examples
 
   with (JSpec('shopping cart')) {                         
