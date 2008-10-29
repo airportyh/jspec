@@ -39,9 +39,6 @@
 	* add should_not_have(count, prop)
 	* add should_include
 	* add should_not_include
-	* add should_match
-	* add should_not_match
-	* add should_fail(message || 'TODO')
 	* add some kind of progress indicator (bar or spinner)
 	* textmate bundle
 	* screencast / page on vision-media.ca
