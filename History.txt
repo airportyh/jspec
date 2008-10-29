@@ -1,4 +1,13 @@
 
+=== 0.0.3 / 2008-10-28
+
+* 4 Minor Enhancements:
+
+  * Added should_fail
+  * Added should_match
+  * Added should_not_match
+  * Added should_be and should_not_be
+
 === 0.0.2 / 2008-10-28
 
 * 1 Bug Fix:
