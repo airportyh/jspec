@@ -18,11 +18,11 @@
   with (JSpec('shopping cart')) {                         
 
 		before_each (function(){            
-			this.cart = new Cart();
+			this.cart = new Cart(); // NOTE: 'this' becomes access to an empty object used as storage
 		});                                 
 
 		it ('Should have no products to begin with', function(){      
-			this.cart.products.should_equal(0);      
+			this.cart.products.should_equal(0); // NOTE: 'this' references anything we added during before_all or before_each
 		});                                 
 
 		it ('Should add products correctly', function(){      
@@ -40,6 +40,8 @@
 	* add should_include
 	* add should_not_include
 	* add some kind of progress indicator (bar or spinner)
+	* add support for very large tests... scrolling/jump-to anchors
+	* add / test ability to run specific suites only
 	* textmate bundle
 	* screencast / page on vision-media.ca
 	
