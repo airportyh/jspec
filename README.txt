@@ -19,36 +19,33 @@
 
   with (JSpec('shopping cart')) {                         
 
-		before_each (function(){            
-			this.cart = new Cart(); // NOTE: 'this' becomes access to an empty object used as storage
-		});                                 
+    before_each (function(){            
+      this.cart = new Cart(); // NOTE: 'this' becomes access to an empty object used as storage
+    });                                 
 
-		it ('Should have no products to begin with', function(){      
-			this.cart.products.should_equal(0); // NOTE: 'this' references anything we added during before_all or before_each
-		});                                 
+    it ('Should have no products to begin with', function(){      
+      this.cart.products.should_equal(0); // NOTE: 'this' references anything we added during before_all or before_each
+    });                                 
 
-		it ('Should add products correctly', function(){      
-			this.cart.addProduct('cookies');
-			this.cart.addProduct('more cookies');
-			this.cart.addProduct('lots of cookies!!!');
-			this.cart.products.should_equal(3);
-		});                                                               
-	}
-	
+    it ('Should add products correctly', function(){      
+      this.cart.addProduct('cookies');
+      this.cart.addProduct('more cookies');
+      this.cart.addProduct('lots of cookies!!!');
+      this.cart.products.should_equal(3);
+    });                                                               
+  }
+  
 == TODO
 
-	* add should_have(count, prop)
-	* add should_not_have(count, prop)
-	* add should_include
-	* add should_not_include
-	* add some kind of progress indicator (bar or spinner)
-	* add support for very large tests... scrolling/jump-to anchors
-	* add / test ability to run specific suites only
-	* add ability to click 'passes' / 'failures' to filter
-	* textmate bundle
-	* screencast / page on vision-media.ca
-	
+  * add / test ability to run specific suites only
+  * add ability to click 'passes' / 'failures' to filter
+  * add selenium support (research availability and installation etc)
+  * test cross browsers
+  * use github for wiki
+  * textmate bundle
+  * screencast / page on vision-media.ca
+  
 == Copyright 
 
-	2008 TJ Holowaychuk (MIT Licensed)
+  2008 TJ Holowaychuk (MIT Licensed)
 
