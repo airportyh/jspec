@@ -37,13 +37,12 @@
   
 == TODO
 
+  * Fix javascript error when no suites are present
   * add / test ability to run specific suites only
   * add ability to click 'passes' / 'failures' to filter
-  * add selenium support (research availability and installation etc)
+  * add selenium support (optional, research)
   * test cross browsers
-  * use github for wiki
   * textmate bundle
-  * screencast / page on vision-media.ca
   
 == Copyright 
 
