@@ -38,7 +38,6 @@
 == TODO
 
   * add / test ability to run specific suites only
-  * add ability to click 'passes' / 'failures' to filter
   * add selenium support (optional, research)
   * consider matchers
   * textmate bundle
