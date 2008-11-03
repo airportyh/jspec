@@ -37,11 +37,10 @@
   
 == TODO
 
-  * Fix javascript error when no suites are present
   * add / test ability to run specific suites only
   * add ability to click 'passes' / 'failures' to filter
   * add selenium support (optional, research)
-  * test cross browsers
+  * consider matchers
   * textmate bundle
   
 == Copyright 
