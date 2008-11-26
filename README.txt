@@ -37,8 +37,10 @@
   
 == TODO
 
+  * add describe function taking place of JSpec().. (describe = JSpec)
   * add / test ability to run specific suites only
   * add selenium support (optional, research)
+  * mocking
   * consider matchers
   * textmate bundle
   
