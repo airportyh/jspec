@@ -96,7 +96,7 @@ describe 'Matchers'
 
 end
 
-describe 'Position captures'
+describe 'Position hooks'
   
   before 
     this.beforeSpecNum = 0
