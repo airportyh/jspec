@@ -78,6 +78,8 @@ describe 'Matchers'
     var numbers = [1, 2, 3]
     numbers.should_include(2)
     numbers.should_not_include(5)
+    var object = { hey : 'there' }
+    object.should_include('hey')
   end
   
   it 'be_a'
