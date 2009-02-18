@@ -80,13 +80,11 @@
       
 === Todo
 
-  * be_type  be_defined
   * evaluate under different context as not to replace any JSpec methods
   * add better banner 
   * add spinner / loading stats
   * add pre-processing to prevent pollution of prototypes
   * contrib for jQuery specific matchers / dom extensions
-  * pre-processing so that should_be_true() can be written as should_be_true
   * nesting
   * add match method for using other matchers within your own
   * add hooks throughout the system
