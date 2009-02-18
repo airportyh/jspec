@@ -69,26 +69,45 @@
       
 === Todo
 
-  * add spinner / loading stats
+  * test ability to run specific suites only
   * evaluate under different context as not to replace any Jspec methods
+  * add better banner 
+  * add spinner / loading stats
+  * add pre-processing to prevent pollution of prototypes
+  * contrib for jQuery specific matchers / dom extensions
+  * pre-processing so that should_be_true() can be written as should_be_true
+  * nesting
   * add match method for using other matchers within your own
+  * add hooks throughout the system
+  * add more formatters
   * before / after / before each / after each / global before/after/before each etc as well
     * allow access to current suite / spec
-  * nesting
-  * implementation icon / color
-  * update documentation
-  * split up into several js files which are packages via Rakefile
-  * add hooks throughout the system
-  * add license / better banner 
-  * add more formatters
-  * test ability to run specific suites only
-  * add pre-processing to prevent pollution of prototypes
-  * pre-processing so that should_be_true() can be written as should_be_true
-  * contrib for jQuery specific matchers / dom extensions
   * mocking
   * textmate bundle
   
-== Copyright 
+=== Copyright 
 
-  2008 - 2009 TJ Holowaychuk <tj@vision-media.ca> (MIT Licensed)
+(The MIT License)
+
+Copyright (c) 2008 - 2009 TJ Holowaychuk <tj@vision-media.ca>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 
