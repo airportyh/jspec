@@ -1,10 +1,9 @@
 
-// JSpec - Core
-// Copyright 2008 - 2009 TJ Holowaychuk <tj@vision-media.ca> (MIT Licensed)
+// JSpec - Core - Copyright TJ Holowaychuk <tj@vision-media.ca> (MIT Licensed)
 
 var JSpec = {
   
-  version : '0.2.2',
+  version : '0.2.3',
   suites  : {},
   stats   : { specs : 0, assertions : 0, failures : 0, passes : 0 },
   
