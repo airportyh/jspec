@@ -107,14 +107,13 @@
       
 === Todo
 
-  * add better banner 
-  * add spinner
   * nesting
   * mocking helpers
   * contrib for jQuery specific matchers / dom extensions
   * add more formatters
   * add pre-processing to prevent pollution of prototypes
-  * add hooks throughout the system
+  * add hooks throughout the system, allow formatters to access (spinner etc)
+  * add spinner
   * add match method for using other matchers within your own
   * sass / compression option
   * clean up Rakefile
