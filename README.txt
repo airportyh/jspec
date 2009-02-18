@@ -107,6 +107,7 @@
       
 === Todo
 
+  * JSpec exceptions .. evaluations .. better debugging
   * contrib for jQuery specific matchers / dom extensions
   * make default formatter easier to read ... float across width (optional?)
   * nesting
