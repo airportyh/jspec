@@ -37,6 +37,7 @@
   
 == TODO
 
+  * add license / better banner 
   * add describe function taking place of JSpec().. (describe = JSpec)
   * add / test ability to run specific suites only
   * add selenium support (optional, research)
@@ -46,5 +47,5 @@
   
 == Copyright 
 
-  2008 TJ Holowaychuk (MIT Licensed)
+  2008 - 2009 TJ Holowaychuk <tj@vision-media.ca> (MIT Licensed)
 

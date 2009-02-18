@@ -2,9 +2,13 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="../lib/jspec.css" />
 		<script src="../lib/jspec.js"></script>
-		<script src="test.js"></script>
+		<script>
+			function runSuites() {
+				Jspec.exec('test.js')
+			}
+		</script>
 	</head>
-	<body onLoad="JSpecManager.run();">
+	<body onLoad="runSuites();">
 		<div id="jspec">
 		</div>
 	</body>
