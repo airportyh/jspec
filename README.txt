@@ -37,12 +37,13 @@
   
 == TODO
 
+  * update documentation
+  * add hooks throughout the system
   * add license / better banner 
-  * add describe function taking place of JSpec().. (describe = JSpec)
-  * add / test ability to run specific suites only
-  * add selenium support (optional, research)
+  * add more formatters
+  * test ability to run specific suites only
+  * add pre-processing to prevent pollution of prototypes
   * mocking
-  * consider matchers
   * textmate bundle
   
 == Copyright 
