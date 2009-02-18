@@ -7,7 +7,7 @@
 }
 #jspec-report {
 	padding: 60px;
-	font: 14px "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
+	font: 12px "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
 }
 #jspec-report .heading span {
 	margin-right: 15px;
@@ -24,7 +24,8 @@
 }
 #jspec-report h2 {
 	margin-top: 25px;
-	font-size: 18px;
+	margin-bottom: 10px;
+	font-size: 15px;
 }
 #jspec-report p {
 	margin-top: 5px;
