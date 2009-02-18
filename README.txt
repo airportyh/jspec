@@ -17,26 +17,25 @@
 
 == Examples
 
-  with (JSpec('shopping cart')) {                         
+  describe 'Shopping cart'
 
-    before_each (function(){            
-      this.cart = new Cart(); // NOTE: 'this' becomes access to an empty object used as storage
-    });                                 
-
-    it ('Should have no products to begin with', function(){      
-      this.cart.products.should_equal(0); // NOTE: 'this' references anything we added during before_all or before_each
-    });                                 
-
-    it ('Should add products correctly', function(){      
-      this.cart.addProduct('cookies');
-      this.cart.addProduct('more cookies');
-      this.cart.addProduct('lots of cookies!!!');
-      this.cart.products.should_equal(3);
-    });                                                               
-  }
+		before each
+			this.cart = new ShoppingCart
+		end
+		
+		it 'should add products'
+			this.cart.addProduct('cookie')
+			this.cart.products.should_include('cookie')
+		end
+		
+	end
   
-== TODO
+=== Nesting
 
+  * add match method for using other matchers within your own
+  * before / after / before each / after each
+  * nesting
+  * implementation icon / color
   * update documentation
   * split up into several js files which are packages via Rakefile
   * add hooks throughout the system

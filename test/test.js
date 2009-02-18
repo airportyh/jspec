@@ -65,4 +65,10 @@ describe 'Matchers'
     string.should_respond_to('toString')
   end
   
+  it 'include'
+    'hey there'.should_include('hey')
+    var numbers = [1, 2, 3]
+    numbers.should_include(2)
+    numbers.should_not_include(5)
+  end
 end
