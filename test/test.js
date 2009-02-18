@@ -21,6 +21,8 @@ describe 'Positive specs'
   
 end
 
+__END__
+
 describe 'Negative specs'
 
   it 'should fail'
