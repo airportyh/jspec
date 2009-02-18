@@ -136,5 +136,10 @@ describe 'Matcher messages'
   it 'Fail with positive message'
     false.should_be(true)
   end
-
+  
+  it 'Fail second assertion message'
+    true.should_be(true)
+    'bar'.should_include('foo')
+    'bar'.should_match(/foo/)
+  end
 end
