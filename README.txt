@@ -10,6 +10,7 @@
   * Evalute or load any number of suites
   * Several helpful formatters
   * Custom formatters
+  * Allows parens to be optional in cases such as value.should_be_true
   * Extremely simple matcher declaration
 
 === Installation
@@ -52,6 +53,7 @@
 		it 'should add products'
 			this.cart.addProduct('cookie')
 			this.cart.products.should_include('cookie')
+			this.cart.empty.should_be_false
 		end
 		
 	end

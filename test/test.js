@@ -143,3 +143,12 @@ describe 'Matcher messages'
     'bar'.should_match(/foo/)
   end
 end
+
+describe 'Pre-processor'
+
+  it 'should allow parens to be optional when no args are passed'
+    true.should_be_true
+    true.should_be_true()
+  end
+
+end
