@@ -79,6 +79,12 @@
 
   * jQuery
     - Coming soon
+
+=== Misc
+
+  * __END__
+    Place the __END__ token in your document to prevent evaluation of
+    the following code. Useful for quickly debugging or speeding up suites.
       
 === Todo
 

@@ -1,4 +1,17 @@
 
+=== 0.1.0 / 2009-02-18
+
+* 8 Major Enhancements
+  
+  * Added new sexy syntax (warning: you will have to re-write your specs)
+  * Added pre-processor for optional matcher parens 
+  * Added several new matchers 
+  * Added matcher aliasing 
+  * Added simple matcher declarations 
+  * Added __END__ 
+  * Added yet-to-be-implemented specs 
+  * Added loading of suites via JSpec.load
+
 === 0.0.4 / 2008-11-03
 
 * 1 Minor Enhancements:
