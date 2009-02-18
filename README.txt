@@ -107,16 +107,15 @@
       
 === Todo
 
-  * evaluate under different context as not to replace any JSpec methods
   * add better banner 
   * add spinner
-  * add pre-processing to prevent pollution of prototypes
-  * contrib for jQuery specific matchers / dom extensions
-  * add match method for using other matchers within your own
-  * add hooks throughout the system
-  * add more formatters
   * nesting
-  * mocking
+  * mocking helpers
+  * contrib for jQuery specific matchers / dom extensions
+  * add more formatters
+  * add pre-processing to prevent pollution of prototypes
+  * add hooks throughout the system
+  * add match method for using other matchers within your own
   * sass / compression option
   * clean up Rakefile
   * textmate bundle
