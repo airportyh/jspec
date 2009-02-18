@@ -39,6 +39,11 @@
 	background: url(images/sprites.png) -12px -54px no-repeat;
 	color: red;
 }
+#jspec-report p.fail em {
+  font-size: 11px;
+  font-style: normal;
+  color: #9B9B9B;
+}
 #jspec-report p.requires-implementation {
   background: url(images/sprites.png) -12px -96px no-repeat;
   color: #9B9B9B;

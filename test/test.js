@@ -126,3 +126,15 @@ describe 'Position hooks'
   end
   
 end
+
+describe 'Matcher messages'
+
+  it 'Fail with negative message'
+    '1'.should_not_be(true)
+  end
+  
+  it 'Fail with positive message'
+    false.should_be(true)
+  end
+
+end
