@@ -25,7 +25,7 @@
 
   ...
   <script>
-	  function runSuites() {
+    function runSuites() {
       JSpec.exec('suite-one.js')
       JSpec.exec('suite-two.js')
     }
@@ -33,32 +33,32 @@
   <body onLoad="runSuites()">
   ...
 
-	To run specific suites we first load and evaluate a JSpec script,
-	then run any number of specific suites, and report.
-	
-	...
-	function runSuites() {
-		JSpec.eval(JSpec.load('test.js'))
-		JSpec.runSuite(JSpec.suites['Matchers']).report()
-	}
-	...
+  To run specific suites we first load and evaluate a JSpec script,
+  then run any number of specific suites, and report.
+  
+  ...
+  function runSuites() {
+    JSpec.eval(JSpec.load('test.js'))
+    JSpec.runSuite(JSpec.suites['Matchers']).report()
+  }
+  ...
 
 === Examples
 
   describe 'Shopping cart'
 
-		before each
-			this.cart = new ShoppingCart
-		end
-		
-		it 'should add products'
-			this.cart.addProduct('cookie')
-			this.cart.products.should_include('cookie')
-			this.cart.empty.should_be_false
-		end
-		
-	end
-	
+    before each
+      this.cart = new ShoppingCart
+    end
+    
+    it 'should add products'
+      this.cart.addProduct('cookie')
+      this.cart.products.should_include('cookie')
+      this.cart.empty.should_be_false
+    end
+    
+  end
+  
 === Matchers
 
   * Core
@@ -95,7 +95,7 @@
   end
 
   it 'will work ;)'
-		this.foo.should_equal 'bar'
+    this.foo.should_equal 'bar'
   end
   ...
 
