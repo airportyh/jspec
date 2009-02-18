@@ -2,9 +2,11 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="../lib/jspec.css" />
 		<script src="../lib/jspec.js"></script>
+		<script src="../lib/jspec.matchers.jquery.js"></script>
 		<script>
 			function runSuites() {
-				JSpec.exec('core.spec.js')
+				JSpec.exec('spec.core.js')
+				JSpec.exec('spec.matchers.jquery.js')
 			}
 		</script>
 	</head>
