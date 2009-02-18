@@ -79,7 +79,6 @@
       
 === Todo
 
-  * test ability to run specific suites only
   * evaluate under different context as not to replace any Jspec methods
   * add better banner 
   * add spinner / loading stats
