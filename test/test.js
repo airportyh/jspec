@@ -71,4 +71,5 @@ describe 'Matchers'
     numbers.should_include(2)
     numbers.should_not_include(5)
   end
+
 end

@@ -32,6 +32,7 @@
   
 === Nesting
 
+  * evaluate under different context as not to replace any Jspec methods
   * add match method for using other matchers within your own
   * before / after / before each / after each
   * nesting
