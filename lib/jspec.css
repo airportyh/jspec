@@ -10,6 +10,9 @@
 	height: 400px;
 	font: 12px "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
 }
+#jspec-report .suites {
+  padding-bottom: 50px;
+}
 #jspec-report .heading span {
 	margin-right: 15px;
 }
