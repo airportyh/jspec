@@ -30,7 +30,7 @@ task :version do
   puts "JSpec-#{version}"
 end
 
-desc 'Release to VERSION'
+desc 'Release to VERSION. Note: update history first'
 task :release do
   raise 'VERSION required' unless ENV['VERSION']
   contents = File.read 'lib/jspec.js'
@@ -39,6 +39,8 @@ task :release do
     file.write contents
   end
   task(:package).invoke
+  sh "git commit -m '- Release #{version}'"
+  sh "git push && git tag #{version} && git push --tags"
 end
 
 task :build => [:package]
