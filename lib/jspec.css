@@ -41,7 +41,7 @@
 	color: red;
 }
 #jspec-report p.requires-implementation {
-  color: #D7DD2E;
+  color: #9B9B9B;
 }
 #jspec-report span.assertion-count {
   font-weight: bold;
