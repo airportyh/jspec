@@ -31,6 +31,16 @@
   <body onLoad="runSuites()">
   ...
 
+	To run specific suites we first load and evaluate a Jspec script,
+	then run any number of specific suites, and report.
+	
+	...
+	function runSuites() {
+		Jspec.eval(Jspec.load('test.js'))
+		Jspec.runSuite(Jspec.suites['Matchers']).report()
+	}
+	...
+
 === Examples
 
   describe 'Shopping cart'
