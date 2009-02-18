@@ -36,11 +36,11 @@ end
 describe 'Matchers'
   it 'eql'
     'test'.should_eql('test')
+    '1'.should_eql(1)
   end
   
   it 'equal'
-    var string = 'test'
-    'test'.should_not_equal('test')
-    string.should_equal(string)
+    'test'.should_equal('test')
+    '1'.should_not_equal(1)
   end
 end
