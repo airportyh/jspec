@@ -59,4 +59,10 @@ describe 'Matchers'
     'test'.should_have_length_of(4)
   end
   
+  it 'respond_to'
+    var string = 'test'
+    string.should_not_respond_to('whatever')
+    string.should_respond_to('toString')
+  end
+  
 end
