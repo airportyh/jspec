@@ -109,6 +109,7 @@
 
   * mocking helpers
   * contrib for jQuery specific matchers / dom extensions
+  * make default formatter easier to read ... float across width (optional?)
   * nesting
   * add more formatters
   * add pre-processing to prevent pollution of prototypes
