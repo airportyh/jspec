@@ -39,3 +39,7 @@
 	background: url(images/sprites.png) -12px -54px no-repeat;
 	color: red;
 }
+#jspec-report span.assertion-count {
+  font-weight: bold;
+  padding: 0 1px;
+}
