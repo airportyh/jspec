@@ -99,11 +99,30 @@ end
 describe 'Position captures'
   
   before 
-    this.pass = true
+    this.beforeSpecNum = 0
+    this.afterSpecNum = 0
+    this.passBefore = true
+  end
+  
+  before_each
+    this.beforeSpecNum++
+  end
+  
+  after_each 
+    this.afterSpecNum++
   end
   
   it 'before should work'
-    this.pass.should_be_true
+    this.passBefore.should_be_true()
+  end
+  
+  it 'before should work again'
+    this.passBefore.should_be_true()
+  end
+  
+  it 'before / after each should work'
+    this.beforeSpecNum.should_equal(3)
+    this.afterSpecNum.should_equal(2)
   end
   
 end
