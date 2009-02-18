@@ -99,6 +99,7 @@
   * nesting
   * mocking
   * sass / compression option
+  * clean up Rakefile
   * textmate bundle
   
 === Copyright 
