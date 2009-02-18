@@ -5,7 +5,7 @@ describe 'Positive specs'
     console.log('once');
   end
 
-  before each 
+  before_each 
     console.log('each');
   end
 
