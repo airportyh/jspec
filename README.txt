@@ -76,10 +76,6 @@
   
   function.length == arity
    
-  if (request.readyState == 4 && request.status == 200) {
-		// load
-	}
-
   * add spinner / loading stats
   * evaluate under different context as not to replace any Jspec methods
   * add match method for using other matchers within your own
