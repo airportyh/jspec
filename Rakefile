@@ -33,14 +33,19 @@ end
 desc 'Release to VERSION. Note: update history first'
 task :release do
   raise 'VERSION required' unless ENV['VERSION']
-  contents = File.read 'lib/jspec.js'
-  contents.sub! /#{version}/, ENV['VERSION']
-  File.open('lib/jspec.js', 'w+') do |file|
-    file.write contents
+  begin
+    contents = File.read 'lib/jspec.js'
+    contents.sub! /#{version}/, ENV['VERSION']
+    File.open('lib/jspec.js', 'w+') do |file|
+      file.write contents
+    end
+    task(:package).invoke
+    sh "git commit -a -m '- Release #{version}'"
+    sh "git push && git tag #{version} && git push --tags"
+    puts "Release of JSpec-#{version} complete"
+  rescue => e
+    puts "Failed to release: #{e}"
   end
-  task(:package).invoke
-  sh "git commit -a -m '- Release #{version}'"
-  sh "git push && git tag #{version} && git push --tags"
 end
 
 task :build => [:package]
