@@ -49,20 +49,20 @@
 === Matchers
 
   * Core
-    - be_a, be_an
-    - be_at_least
-    - be_at_most
-    - be_empty
-    - be_false
-    - be_greater_than
-    - be_less_than
-    - be_true
-    - eql
-    - equal
-    - have_length_of 
-    - include
-    - match
-    - respond_to
+    - eql              ==
+    - equal            ===
+    - be_a, be_an      have constructor of x
+    - be_at_least      >=
+    - be_at_most       <=
+    - be_empty         length of 0
+    - be_true          == true
+    - be_false         == false
+    - be_greater_than  >
+    - be_less_than     <
+    - have_length_of   length of x
+    - include          include substring, array element, or hash key
+    - match            string should match regexp x
+    - respond_to       property x should be a function
 
   * jQuery
     - Coming soon
