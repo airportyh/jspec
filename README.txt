@@ -84,15 +84,13 @@
 
   * evaluate under different context as not to replace any JSpec methods
   * add better banner 
-  * add spinner / loading stats
+  * add spinner
   * add pre-processing to prevent pollution of prototypes
   * contrib for jQuery specific matchers / dom extensions
-  * nesting
   * add match method for using other matchers within your own
   * add hooks throughout the system
   * add more formatters
-  * before / after / before each / after each / global before/after/before each etc as well
-    * allow access to current suite / spec
+  * nesting
   * mocking
   * textmate bundle
   
