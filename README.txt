@@ -67,6 +67,7 @@
     - be_empty         length of 0
     - be_true          == true
     - be_false         == false
+    - be_type          be type of x
     - be_greater_than  >
     - be_less_than     <
     - have_length_of   length of x
@@ -79,6 +80,7 @@
       
 === Todo
 
+  * be_type  be_defined
   * evaluate under different context as not to replace any JSpec methods
   * add better banner 
   * add spinner / loading stats

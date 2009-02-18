@@ -76,10 +76,9 @@ describe 'Matchers'
   
   it 'include'
     'hey there'.should_include('hey')
-    var numbers = [1, 2, 3]
+    var numbers = [1, 2, 3], object = { hey : 'there' }
     numbers.should_include(2)
     numbers.should_not_include(5)
-    var object = { hey : 'there' }
     object.should_include('hey')
   end
   
@@ -94,6 +93,13 @@ describe 'Matchers'
     lambda.should_throw_error()
     var lambda = function() { return 'test' }
     lambda.should_not_throw_error()
+  end
+  
+  it 'be_type'
+    var object = {}, func = function(){}
+    'hey'.should_be_type('string')
+    object.should_be_type('object')
+    func.should_be_type('function')
   end
 
 end
