@@ -1,35 +1,39 @@
 
+=== 0.2.1 / 2009-02-18
+
+* Added contexts
+
 === 0.2.0 / 2009-02-18
 
-  * Added release rake task
-  * Added package with minified alternative
+* Added release rake task
+* Added package with minified alternative
 
 === 0.1.0 / 2009-02-18
 
-  * Added new sexy syntax (warning: you will have to re-write your specs)
-  * Added pre-processor for optional matcher parens 
-  * Added several new matchers 
-  * Added matcher aliasing 
-  * Added simple matcher declarations 
-  * Added __END__ 
-  * Added yet-to-be-implemented specs 
-  * Added loading of suites via JSpec.load
+* Added new sexy syntax (warning: you will have to re-write your specs)
+* Added pre-processor for optional matcher parens 
+* Added several new matchers 
+* Added matcher aliasing 
+* Added simple matcher declarations 
+* Added __END__ 
+* Added yet-to-be-implemented specs 
+* Added loading of suites via JSpec.load
 
 === 0.0.4 / 2008-11-03
 
-  * Added ability to pass only a description to it(), meaning not yet implemented
+* Added ability to pass only a description to it(), meaning not yet implemented
 
 === 0.0.3 / 2008-10-28
 
-  * Added should_fail
-  * Added should_match
-  * Added should_not_match
-  * Added should_be and should_not_be
+* Added should_fail
+* Added should_match
+* Added should_not_match
+* Added should_be and should_not_be
 
 === 0.0.2 / 2008-10-28
 
-  * Fixed typo in documentation for pointing to the master repo
+* Fixed typo in documentation for pointing to the master repo
 
 === 0.0.1 / 2008-10-28
 
-  * Initial release
+* Initial release

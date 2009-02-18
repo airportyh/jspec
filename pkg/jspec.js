@@ -2,8 +2,6 @@
 // JSpec - Core
 // Copyright 2008 - 2009 TJ Holowaychuk <tj@vision-media.ca> (MIT Licensed)
 
-// TODO: JSpec rename 
-
 var JSpec = {
   
   version : '0.2.1',
@@ -43,9 +41,28 @@ var JSpec = {
   
   // --- Objects
   
+  /**
+   * Default context in which bodies are evaluated.
+   * This allows specs and hooks to use the 'this' keyword in
+   * order to store variables, as well as allowing the Context
+   * to provide helper methods or properties.
+   *
+   * Replace context simply by setting JSpec.context
+   * to your own like below:
+   *
+   * JSpec.context = { foo : 'bar' }
+   * JSpec.context = new CustomContext
+   *
+   * Contexts can be changed within any body, this can be useful
+   * in order to provide specific helper methods to specific suites.
+   */
+  
+  Context : function() {
+
+  },
+  
   // TODO: allow several arguments to be passed, always consider actual array / apply
   // TODO: change include to allow several like should_include(1,2,3)
-  // TODO: stop using this.func ... use this.extend {}
   
   /**
    * Matcher.
@@ -78,10 +95,7 @@ var JSpec = {
   
   Matcher : function (name, matcher, expected, actual, negate) {
     var self = this
-    // TODO: remove these since they are not used.. well some of them, other objects too
-    this.name = name
-    this.message = ''
-    this.passed = false
+    this.name = name, this.message = '', this.passed = false
     
     if (typeof matcher == 'string') {
       if (matcher.match(/^alias (\w+)/)) matcher = JSpec.matchers[matcher.match(/^alias (\w+)/)[1]]
@@ -167,9 +181,7 @@ var JSpec = {
    */
       
   Suite : function(description) {
-    this.specs = [], this.hooks = {}
-    this.description = description
-    this.ran = false
+    this.specs = [], this.hooks = {}, this.description = description, this.ran = false
     this.addSpec = function(spec) {
       this.specs.push(spec)
       spec.suite = this
@@ -189,9 +201,7 @@ var JSpec = {
    */
   
   Spec : function(description, body) {
-    this.body = body
-    this.description = description
-    this.assertions = []
+    this.body = body, this.description = description, this.assertions = []
     
     this.failure = function() {
       var failure
@@ -307,7 +317,11 @@ var JSpec = {
    */
   
   evalBody : function(body, errorMessage) {
-    try { eval(this.preProcessBody(body)) }
+    try {
+      var runner = function() { eval(JSpec.preProcessBody(body)) }
+      this.context = this.context || new JSpec.Context
+      runner.call(this.context)
+    } 
     catch(e) { throw (errorMessage || 'Error: ') + e }
   },
   
