@@ -107,9 +107,9 @@
       
 === Todo
 
-  * nesting
   * mocking helpers
   * contrib for jQuery specific matchers / dom extensions
+  * nesting
   * add more formatters
   * add pre-processing to prevent pollution of prototypes
   * add hooks throughout the system, allow formatters to access (spinner etc)

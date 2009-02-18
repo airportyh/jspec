@@ -1,5 +1,5 @@
 
-desc 'Package jspec.'
+desc 'Package'
 task :package => [:clear] do
   begin
     sh 'mkdir pkg'
@@ -12,12 +12,12 @@ task :package => [:clear] do
   end
 end
 
-desc 'Open jspec for development.'
+desc 'Open for development in Firefox'
 task :open do
-  sh 'open -a Firefox test/test.html'
+  sh 'open -a Firefox spec/spec.html'
 end
 
-desc 'Clear packaging.'
+desc 'Clear packaging'
 task :clear do
   if File.directory? 'pkg'
     sh 'rm -fr pkg/*'
@@ -27,10 +27,10 @@ end
 
 desc 'Display current version'
 task :version do
-  puts "JSpec-#{version}"
+  puts version
 end
 
-desc 'Release to VERSION. Note: update history first'
+desc 'Release to VERSION; Update history first'
 task :release do
   raise 'VERSION required' unless ENV['VERSION']
   begin
@@ -47,9 +47,6 @@ task :release do
     puts "Failed to release: #{e}"
   end
 end
-
-task :build => [:package]
-task :remove => [:clear]
 
 def version
   $1 if File.read('lib/jspec.js').match /version : '(.*?)'/
