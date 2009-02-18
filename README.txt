@@ -74,10 +74,6 @@
      break label
      continue label
   
-  in for include?
-  
-  be_in
-
   function.length == arity
    
   if (request.readyState == 4 && request.status == 200) {
