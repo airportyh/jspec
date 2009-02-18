@@ -4,7 +4,7 @@
 JSpec is a minimalistic JavaScript behavior driven development framework,
 providing simple installation, usage, and extremely low learning curve.
 
-=== Features
+== Features
 
 * Sexiest syntax of them all
 * Evalute or load any number of suites
@@ -14,7 +14,7 @@ providing simple installation, usage, and extremely low learning curve.
 * Allows parens to be optional when using matchers ('foobar'.should_include 'foo')
 * Extremely simple matcher declaration
 
-=== Installation
+== Installation
 
 Simply download JSpec and include JSpec.css and JSpec.js in your markup.
 A div with the id of #jspec should be present for displaying when using
@@ -43,7 +43,7 @@ then run any number of specific suites, and report.
   }
   ...
 
-=== Examples
+== Examples
 
   describe 'Shopping cart'
 
@@ -59,7 +59,7 @@ then run any number of specific suites, and report.
     
   end
   
-=== Matchers
+== Matchers
 
 * Core
   - eql, be          ==
@@ -81,7 +81,7 @@ then run any number of specific suites, and report.
 * jQuery
   - Coming soon
 
-=== Custom Contexts
+== Custom Contexts
 
 Custom contexts can be applied to supply helper
 methods or properties to all subsequent bodies (other hooks, or specs).
@@ -99,12 +99,12 @@ In most cases the default context will suffice, in combination with the
   end
   ...
 
-=== Misc
+== Misc
 
-* __END__ : Place the __END__ token in your document to prevent evaluation of
-  the following code. Useful for quickly debugging or speeding up suites.
+Place the '__END__' token in your document to prevent evaluation of
+the following code. Useful for quickly debugging or speeding up suites.
       
-=== Todo
+== Todo
 
 * use single context ... not instance.. so it can be extended
 * DOM sandbox
@@ -121,7 +121,7 @@ In most cases the default context will suffice, in combination with the
 * JSpec exceptions .. evaluations .. better debugging
 * textmate bundle
   
-=== Copyright 
+== License 
 
 (The MIT License)
 
