@@ -107,7 +107,8 @@
       
 === Todo
 
-  * JSpec exceptions .. evaluations .. better debugging
+  * use single context ... not instance.. so it can be extended
+  * DOM sandbox
   * contrib for jQuery specific matchers / dom extensions
   * make default formatter easier to read ... float across width (optional?)
   * nesting
@@ -118,6 +119,7 @@
   * add match method for using other matchers within your own
   * sass / compression option
   * clean up Rakefile
+  * JSpec exceptions .. evaluations .. better debugging
   * textmate bundle
   
 === Copyright 

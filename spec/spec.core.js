@@ -162,6 +162,10 @@ describe 'Custom Contexts'
   before 
     JSpec.context = { iLike : 'cookies' }
   end
+  
+  after
+    JSpec.context = null
+  end
 
   it 'should allow helpers'
     this.iLike.should_equal('cookies')
