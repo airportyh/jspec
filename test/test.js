@@ -1,14 +1,6 @@
 
 describe 'Positive specs'
 
-  before 
-    console.log('once');
-  end
-
-  before_each 
-    console.log('each');
-  end
-
   it 'should pass'
     'test'.should_equal('test')
   end
@@ -20,8 +12,6 @@ describe 'Positive specs'
   end
   
 end
-
-__END__
 
 describe 'Negative specs'
 
@@ -104,4 +94,16 @@ describe 'Matchers'
     func.should_be_type('function')
   end
 
+end
+
+describe 'Position captures'
+  
+  before 
+    this.pass = true
+  end
+  
+  it 'before should work'
+    this.pass.should_be_true
+  end
+  
 end
