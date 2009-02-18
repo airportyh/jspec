@@ -79,5 +79,11 @@ describe 'Matchers'
     numbers.should_include(2)
     numbers.should_not_include(5)
   end
+  
+  it 'be_a'
+    var array = []
+    'test'.should_be_a(String)
+    array.should_be_an(Array)
+  end
 
 end
