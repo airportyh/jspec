@@ -2,12 +2,13 @@
 desc 'Package jspec.'
 task :package => [:clear] do
   begin
-    sh "mkdir pkg"
-    sh "tar -czf pkg/jspec.tar.gz lib"
+    sh 'mkdir pkg'
+    sh 'cp -fr lib/* pkg'
+    sh "jsmin < lib/jspec.js > pkg/jspec.min.js"
   rescue Exception => e
     puts "Failed to package: #{e}."
   else 
-    puts "Packaging completed."
+    puts "Packaging of JSpec-#{version} completed."
   end
 end
 
@@ -18,12 +19,20 @@ end
 
 desc 'Clear packaging.'
 task :clear do
-  if File.directory?('pkg')
-    sh "rm -fr pkg/*"
-    sh "rmdir pkg"
+  if File.directory? 'pkg'
+    sh 'rm -fr pkg/*'
+    sh 'rmdir pkg'
   end
-  sh "clear"
+end
+
+desc 'Display current version'
+task :version do
+  puts "JSpec-#{version}"
 end
 
 task :build => [:package]
 task :remove => [:clear]
+
+def version
+  @version ||= $1 if File.read('lib/jspec.js').match /version : '(.*?)'/
+end

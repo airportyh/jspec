@@ -16,7 +16,7 @@
 === Installation
 
   Simply download JSpec and include JSpec.css and JSpec.js in your markup.
-  A div with the id of #JSpec should be present for displaying when using
+  A div with the id of #jspec should be present for displaying when using
   the default formatter. 
 
   JSpec scripts should NOT be referenced via the <script> tag, they should be
@@ -98,6 +98,7 @@
   * add more formatters
   * nesting
   * mocking
+  * sass / compression option
   * textmate bundle
   
 === Copyright 
