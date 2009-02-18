@@ -1,27 +1,27 @@
 
 = JSpec
 
-  JSpec is a minimalistic JavaScript behavior driven development framework,
-  providing simple installation, usage, and extremely low learning curve.
+JSpec is a minimalistic JavaScript behavior driven development framework,
+providing simple installation, usage, and extremely low learning curve.
 
 === Features
 
-  * Sexiest syntax of them all
-  * Evalute or load any number of suites
-  * Several helpful formatters
-  * Custom formatters
-  * Evaluation contexts for providing helper methods and properties
-  * Allows parens to be optional when using matchers ('foobar'.should_include 'foo')
-  * Extremely simple matcher declaration
+* Sexiest syntax of them all
+* Evalute or load any number of suites
+* Several helpful formatters
+* Custom formatters
+* Evaluation contexts for providing helper methods and properties
+* Allows parens to be optional when using matchers ('foobar'.should_include 'foo')
+* Extremely simple matcher declaration
 
 === Installation
 
-  Simply download JSpec and include JSpec.css and JSpec.js in your markup.
-  A div with the id of #jspec should be present for displaying when using
-  the default formatter. 
+Simply download JSpec and include JSpec.css and JSpec.js in your markup.
+A div with the id of #jspec should be present for displaying when using
+the default formatter. 
 
-  JSpec scripts should NOT be referenced via the <script> tag, they should be
-  loaded using the exec method. Below is an example:
+JSpec scripts should NOT be referenced via the <script> tag, they should be
+loaded using the exec method. Below is an example:
 
   ...
   <script>
@@ -33,8 +33,8 @@
   <body onLoad="runSuites()">
   ...
 
-  To run specific suites we first load and evaluate a JSpec script,
-  then run any number of specific suites, and report.
+To run specific suites we first load and evaluate a JSpec script,
+then run any number of specific suites, and report.
   
   ...
   function runSuites() {
@@ -61,33 +61,33 @@
   
 === Matchers
 
-  * Core
-    - eql, be          ==
-    - equal            ===
-    - be_a, be_an      have constructor of x
-    - be_at_least      >=
-    - be_at_most       <=
-    - be_empty         length of 0
-    - be_true          == true
-    - be_false         == false
-    - be_type          be type of x
-    - be_greater_than  >
-    - be_less_than     <
-    - have_length_of   length of x
-    - include          include substring, array element, or hash key
-    - match            string should match regexp x
-    - respond_to       property x should be a function
+* Core
+  - eql, be          ==
+  - equal            ===
+  - be_a, be_an      have constructor of x
+  - be_at_least      >=
+  - be_at_most       <=
+  - be_empty         length of 0
+  - be_true          == true
+  - be_false         == false
+  - be_type          be type of x
+  - be_greater_than  >
+  - be_less_than     <
+  - have_length_of   length of x
+  - include          include substring, array element, or hash key
+  - match            string should match regexp x
+  - respond_to       property x should be a function
 
-  * jQuery
-    - Coming soon
+* jQuery
+  - Coming soon
 
 === Custom Contexts
 
-  Custom contexts can be applied to supply helper
-  methods or properties to all subsequent bodies (other hooks, or specs).
- 
-  In most cases the default context will suffice, in combination with the
-  'this' keyword.
+Custom contexts can be applied to supply helper
+methods or properties to all subsequent bodies (other hooks, or specs).
+
+In most cases the default context will suffice, in combination with the
+'this' keyword.
 
   ...
   before
@@ -101,26 +101,26 @@
 
 === Misc
 
-  * __END__
-    Place the __END__ token in your document to prevent evaluation of
-    the following code. Useful for quickly debugging or speeding up suites.
+* __END__
+Place the __END__ token in your document to prevent evaluation of
+the following code. Useful for quickly debugging or speeding up suites.
       
 === Todo
 
-  * use single context ... not instance.. so it can be extended
-  * DOM sandbox
-  * contrib for jQuery specific matchers / dom extensions
-  * make default formatter easier to read ... float across width (optional?)
-  * nesting
-  * add more formatters
-  * add pre-processing to prevent pollution of prototypes
-  * add hooks throughout the system, allow formatters to access (spinner etc)
-  * add spinner
-  * add match method for using other matchers within your own
-  * sass / compression option
-  * clean up Rakefile
-  * JSpec exceptions .. evaluations .. better debugging
-  * textmate bundle
+* use single context ... not instance.. so it can be extended
+* DOM sandbox
+* contrib for jQuery specific matchers / dom extensions
+* make default formatter easier to read ... float across width (optional?)
+* nesting
+* add more formatters
+* add pre-processing to prevent pollution of prototypes
+* add hooks throughout the system, allow formatters to access (spinner etc)
+* add spinner
+* add match method for using other matchers within your own
+* sass / compression option
+* clean up Rakefile
+* JSpec exceptions .. evaluations .. better debugging
+* textmate bundle
   
 === Copyright 
 
