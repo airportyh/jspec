@@ -85,5 +85,12 @@ describe 'Matchers'
     'test'.should_be_a(String)
     array.should_be_an(Array)
   end
+  
+  it 'throw_error'
+    var lambda = function() { throw 'error' }
+    lambda.should_throw_error()
+    var lambda = function() { return 'test' }
+    lambda.should_not_throw_error()
+  end
 
 end
