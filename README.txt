@@ -49,19 +49,20 @@
 === Matchers
 
   * Core
-    - eql
-    - equal
-    - be_greater_than
-    - be_less_than
+    - be_a, be_an
     - be_at_least
     - be_at_most
-    - match
     - be_empty
-    - be_true
     - be_false
+    - be_greater_than
+    - be_less_than
+    - be_true
+    - eql
+    - equal
     - have_length_of 
-    - respond_to
     - include
+    - match
+    - respond_to
 
   * jQuery
     - Coming soon
