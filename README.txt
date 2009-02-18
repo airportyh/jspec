@@ -10,7 +10,7 @@
   * Evalute or load any number of suites
   * Several helpful formatters
   * Custom formatters
-  * Allows parens to be optional in cases such as value.should_be_true
+  * Allows parens to be optional when using matchers ('foobar'.should_include 'foo')
   * Extremely simple matcher declaration
 
 === Installation

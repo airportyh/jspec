@@ -150,5 +150,9 @@ describe 'Pre-processor'
     true.should_be_true
     true.should_be_true()
   end
+  
+  it 'should allow parens to be optional with args'
+    'foobar'.should_include 'foo'
+  end
 
 end
