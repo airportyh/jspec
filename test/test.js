@@ -43,4 +43,5 @@ describe 'Matchers'
     'test'.should_equal('test')
     '1'.should_not_equal(1)
   end
+  
 end
