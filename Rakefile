@@ -41,7 +41,7 @@ task :release do
     end
     task(:package).invoke
     sh "git commit -a -m '- Release #{version}'"
-    sh "git push && git tag #{version} && git push --tags"
+    sh "git tag #{version} && git push && git push --tags"
     puts "Release of JSpec-#{version} complete"
   rescue => e
     puts "Failed to release: #{e}"
