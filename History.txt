@@ -1,10 +1,10 @@
 
-=== 0.1.1 / 2009-02-18
+=== 0.2.0 / 2009-02-18
 
 * 2 Minor Enhancement
 
   * Added release rake task
-  * Added package for 0.1.1 with minified alternative
+  * Added package with minified alternative
 
 === 0.1.0 / 2009-02-18
 

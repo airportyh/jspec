@@ -39,7 +39,7 @@ task :release do
     file.write contents
   end
   task(:package).invoke
-  sh "git commit -m '- Release #{version}'"
+  sh "git commit -a -m '- Release #{version}'"
   sh "git push && git tag #{version} && git push --tags"
 end
 
