@@ -4,7 +4,7 @@
 
 var JSpec = {
   
-  version : '0.2.1',
+  version : '0.2.2',
   suites  : {},
   stats   : { specs : 0, assertions : 0, failures : 0, passes : 0 },
   
