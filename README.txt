@@ -14,8 +14,8 @@
 
 === Installation
 
-  Simply download JSpec and include jspec.css and jspec.js in your markup.
-  A div with the id of #jspec should be present for displaying when using
+  Simply download JSpec and include JSpec.css and JSpec.js in your markup.
+  A div with the id of #JSpec should be present for displaying when using
   the default formatter. 
 
   JSpec scripts should NOT be referenced via the <script> tag, they should be
@@ -24,20 +24,20 @@
   ...
   <script>
 	  function runSuites() {
-      Jspec.exec('suite-one.js')
-      Jspec.exec('suite-two.js')
+      JSpec.exec('suite-one.js')
+      JSpec.exec('suite-two.js')
     }
   </script>
   <body onLoad="runSuites()">
   ...
 
-	To run specific suites we first load and evaluate a Jspec script,
+	To run specific suites we first load and evaluate a JSpec script,
 	then run any number of specific suites, and report.
 	
 	...
 	function runSuites() {
-		Jspec.eval(Jspec.load('test.js'))
-		Jspec.runSuite(Jspec.suites['Matchers']).report()
+		JSpec.eval(JSpec.load('test.js'))
+		JSpec.runSuite(JSpec.suites['Matchers']).report()
 	}
 	...
 
@@ -79,7 +79,7 @@
       
 === Todo
 
-  * evaluate under different context as not to replace any Jspec methods
+  * evaluate under different context as not to replace any JSpec methods
   * add better banner 
   * add spinner / loading stats
   * add pre-processing to prevent pollution of prototypes
