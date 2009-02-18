@@ -30,9 +30,20 @@ task :version do
   puts "JSpec-#{version}"
 end
 
+desc 'Release to VERSION'
+task :release do
+  raise 'VERSION required' unless ENV['VERSION']
+  contents = File.read 'lib/jspec.js'
+  contents.sub! /#{version}/, ENV['VERSION']
+  File.open('lib/jspec.js', 'w+') do |file|
+    file.write contents
+  end
+  task(:package).invoke
+end
+
 task :build => [:package]
 task :remove => [:clear]
 
 def version
-  @version ||= $1 if File.read('lib/jspec.js').match /version : '(.*?)'/
+  $1 if File.read('lib/jspec.js').match /version : '(.*?)'/
 end
