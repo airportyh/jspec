@@ -2,8 +2,8 @@
 desc 'Package jspec.'
 task :package => [:clear] do
   begin
-    sh "mkdir ./pkg"
-    sh "tar -czf pkg/jspec.tar.gz ./lib"
+    sh "mkdir pkg"
+    sh "tar -czf pkg/jspec.tar.gz lib"
   rescue Exception => e
     puts "Failed to package: #{e}."
   else 
@@ -11,11 +11,16 @@ task :package => [:clear] do
   end
 end
 
+desc 'Open jspec for development.'
+task :open do
+  sh 'open -a Firefox test/test.html'
+end
+
 desc 'Clear packaging.'
 task :clear do
-  if File.directory?('./pkg')
-    sh "rm -fr ./pkg/*"
-    sh "rmdir ./pkg"
+  if File.directory?('pkg')
+    sh "rm -fr pkg/*"
+    sh "rmdir pkg"
   end
   sh "clear"
 end

@@ -69,6 +69,22 @@
       
 === Todo
 
+  label:
+    statement 
+     break label
+     continue label
+  
+  in for include?
+  
+  be_in
+
+  function.length == arity
+   
+  if (request.readyState == 4 && request.status == 200) {
+		// load
+	}
+
+  * add spinner / loading stats
   * evaluate under different context as not to replace any Jspec methods
   * add match method for using other matchers within your own
   * before / after / before each / after each / global before/after/before each etc as well
