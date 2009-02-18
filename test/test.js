@@ -156,3 +156,15 @@ describe 'Pre-processor'
   end
 
 end
+
+describe 'Custom Contexts'
+
+  before 
+    JSpec.context = { iLike : 'cookies' }
+  end
+
+  it 'should allow helpers'
+    this.iLike.should_equal('cookies')
+  end
+
+end

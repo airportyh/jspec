@@ -10,6 +10,7 @@
   * Evalute or load any number of suites
   * Several helpful formatters
   * Custom formatters
+  * Evaluation contexts for providing helper methods and properties
   * Allows parens to be optional when using matchers ('foobar'.should_include 'foo')
   * Extremely simple matcher declaration
 
@@ -79,6 +80,24 @@
 
   * jQuery
     - Coming soon
+
+=== Custom Contexts
+
+  Custom contexts can be applied to supply helper
+  methods or properties to all subsequent bodies (other hooks, or specs).
+ 
+  In most cases the default context will suffice, in combination with the
+  'this' keyword.
+
+  ...
+  before
+    JSpec.context = { foo : 'bar' }
+  end
+
+  it 'will work ;)'
+		this.foo.should_equal 'bar'
+  end
+  ...
 
 === Misc
 
