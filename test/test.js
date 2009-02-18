@@ -1,5 +1,13 @@
 
-describe 'Positive specs' 
+describe 'Positive specs'
+
+  before 
+    console.log('once');
+  end
+
+  before each 
+    console.log('each');
+  end
 
   it 'should pass'
     'test'.should_equal('test')

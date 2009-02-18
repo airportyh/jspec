@@ -70,7 +70,8 @@
 
   * evaluate under different context as not to replace any Jspec methods
   * add match method for using other matchers within your own
-  * before / after / before each / after each
+  * before / after / before each / after each / global before/after/before each etc as well
+    * allow access to current suite / spec
   * nesting
   * implementation icon / color
   * update documentation
