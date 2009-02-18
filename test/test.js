@@ -44,4 +44,19 @@ describe 'Matchers'
     '1'.should_not_equal(1)
   end
   
+  it 'match'
+    'foobar'.should_match(/foo/)
+    'foobar'.should_not_match(/barfoo/)
+  end
+  
+  it 'be_empty'
+    var string = '', array = []
+    string.should_be_empty()
+    array.should_be_empty()
+  end
+  
+  it 'have_length'
+    'test'.should_have_length_of(4)
+  end
+  
 end

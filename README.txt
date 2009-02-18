@@ -38,11 +38,14 @@
 == TODO
 
   * update documentation
+  * split up into several js files which are packages via Rakefile
   * add hooks throughout the system
   * add license / better banner 
   * add more formatters
   * test ability to run specific suites only
   * add pre-processing to prevent pollution of prototypes
+  * pre-processing so that should_be_true() can be written as should_be_true
+  * contrib for jQuery specific matchers / dom extensions
   * mocking
   * textmate bundle
   
