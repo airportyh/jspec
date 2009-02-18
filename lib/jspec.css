@@ -35,9 +35,13 @@
 	background: url(images/sprites.png) -12px -12px no-repeat;
 	color: green;
 }
-#jspec-report p.fail {
+#jspec-report p.fail,
+#jspec-report p.requires-implementation {
 	background: url(images/sprites.png) -12px -54px no-repeat;
 	color: red;
+}
+#jspec-report p.requires-implementation {
+  color: #D7DD2E;
 }
 #jspec-report span.assertion-count {
   font-weight: bold;

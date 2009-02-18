@@ -25,3 +25,10 @@ describe 'Negative specs'
   end
   
 end
+
+describe 'Misc'
+
+  it 'requires implementation'
+  end
+
+end
