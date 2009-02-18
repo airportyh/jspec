@@ -59,7 +59,7 @@
 === Matchers
 
   * Core
-    - eql              ==
+    - eql, be          ==
     - equal            ===
     - be_a, be_an      have constructor of x
     - be_at_least      >=

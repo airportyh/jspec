@@ -45,6 +45,7 @@ describe 'Matchers'
   it 'eql'
     'test'.should_eql('test')
     '1'.should_eql(1)
+    '1'.should_be(1)
   end
   
   it 'equal'
