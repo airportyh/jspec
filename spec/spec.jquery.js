@@ -3,6 +3,7 @@ describe 'jQuery matchers'
   
   it 'have_selector'
     $('<p class="article"><h2>Test</h2></p>').should_have_selector('h2')
+    this.element('<p class="article"><h2>Test</h2></p>').should_have_selector('h2')
   end
   
   it 'have_text'
