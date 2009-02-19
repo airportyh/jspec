@@ -80,7 +80,7 @@ then run any number of specific suites, and report.
   - be_type          be type of x
   - be_greater_than  >
   - be_less_than     <
-  - have_length_of   length of x
+  - have_length      length of x
   - include          include substring, array element, or hash key
   - match            string should match regexp x
   - respond_to       property x should be a function

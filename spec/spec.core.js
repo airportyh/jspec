@@ -57,7 +57,7 @@ describe 'Matchers'
   end
   
   it 'have_length'
-    'test'.should_have_length_of(4)
+    'test'.should_have_length(4)
   end
   
   it 'respond_to'
