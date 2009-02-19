@@ -5,6 +5,7 @@ task :package => [:clear] do
     sh 'mkdir pkg'
     sh 'cp -fr lib/* pkg'
     sh "jsmin < lib/jspec.js > pkg/jspec.min.js"
+    sh 'git add pkg/.'
   rescue Exception => e
     puts "Failed to package: #{e}."
   else 
