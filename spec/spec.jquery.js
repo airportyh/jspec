@@ -18,7 +18,7 @@ describe 'jQuery matchers'
   end
   
   it 'have_class'
-    this.element('<input type="textfield"  class="cookies">').should_have_class('cookies')
+    this.element('<p class="foo bar"></p>').should_have_class('bar')
   end
   
 end
