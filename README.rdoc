@@ -62,6 +62,7 @@ then run any number of specific suites, and report.
 == Matchers
 
 * Core
+
   - eql, be          ==
   - equal            ===
   - be_a, be_an      have constructor of x
@@ -79,6 +80,7 @@ then run any number of specific suites, and report.
   - respond_to       property x should be a function
 
 * jQuery
+
   - have_selector    
   - have_text        
   - have_html        
