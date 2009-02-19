@@ -2,22 +2,36 @@
 describe 'jQuery matchers'
 
   before_each
-    var html = '<p><label>Save?</label>' +
+    var html = '<p><label><em>Save?</em></label>' +
     '<select class="save" style="display: none;">' +
     '<option value="0">No</option>' +
     '<option value="1">Yes</option>' +
-    '</select></p>'
+    '</select>' +
+    '<strong>test</strong>' +
+    '<strong>test</strong>' +
+    '</p>'
     this.elem = $(html)
   end
   
   it 'have_tag'
     this.elem.should_have_tag('label')
+    this.elem.should_have_tag('em')
     this.elem.should_not_have_tag('input')
   end
   
   it 'have_tags'
     this.elem.should_have_tags('option')
     this.elem.should_not_have_tags('label')
+  end
+  
+  it 'have_child'
+    this.elem.should_have_child('label')
+    this.elem.should_not_have_child('em')
+  end
+  
+  it 'have_children'
+    this.elem.should_have_children('strong')
+    this.elem.should_not_have_children('select')
   end
   
   it 'have_text'

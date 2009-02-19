@@ -83,8 +83,10 @@ then run any number of specific suites, and report.
   
   - have_tag       have exactly one tag   
   - have_tags      have more than one tag
-  - have_text        
-  - have_value       
+  - have_child     have exactly one child
+  - have_children  have more than one child
+  - have_text      have plain text
+  - have_value     
   - have_class
   - be_visible
   - be_hidden
