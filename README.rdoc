@@ -107,8 +107,9 @@ In most cases the default context will suffice, in combination with the
 
 == Misc
 
-Place the \_\_END\_\_ token in your document to prevent evaluation of
-the following code. Useful for quickly debugging or speeding up suites.
+* \_\_END\_\_
+  - Place the \_\_END\_\_ token in your document to prevent evaluation of
+    the following code. Useful for quickly debugging or speeding up suites.
       
 == Todo
 
