@@ -26,8 +26,10 @@ loaded using the exec method. Below is an example:
   ...
   <script>
     function runSuites() {
-      JSpec.exec('suite-one.js')
-      JSpec.exec('suite-two.js')
+			JSpec
+			.exec('spec.core.js')
+			.exec('spec.jquery.js')
+			.report()
     }
   </script>
   <body onLoad="runSuites()">
@@ -38,8 +40,10 @@ then run any number of specific suites, and report.
   
   ...
   function runSuites() {
-    JSpec.eval(JSpec.load('test.js'))
-    JSpec.runSuite(JSpec.suites['Matchers']).report()
+    JSpec
+    .eval(JSpec.load('test.js'))
+    .runSuite(JSpec.suites['Matchers'])
+    .report()
   }
   ...
 

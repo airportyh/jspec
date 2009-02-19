@@ -6,8 +6,10 @@
 		<script src="../lib/jspec.jquery.js"></script>
 		<script>
 			function runSuites() {
-				JSpec.exec('spec.core.js')
-				JSpec.exec('spec.jquery.js')
+				JSpec
+				.exec('spec.core.js')
+				.exec('spec.jquery.js')
+				.report()
 			}
 		</script>
 	</head>
