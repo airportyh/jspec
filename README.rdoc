@@ -6,13 +6,13 @@ providing simple installation, usage, and extremely low learning curve.
 
 == Features
 
-  * Sexiest syntax of them all
-  * Evalute or load any number of suites
-  * Several helpful formatters
-  * Custom formatters
-  * Evaluation contexts for providing helper methods and properties
-  * Allows parens to be optional when using matchers ('foobar'.should_include 'foo')
-  * Extremely simple matcher declaration
+* Sexiest syntax of them all
+* Evalute or load any number of suites
+* Several helpful formatters
+* Custom formatters
+* Evaluation contexts for providing helper methods and properties
+* Allows parens to be optional when using matchers ('foobar'.should_include 'foo')
+* Extremely simple matcher declaration
 
 == Installation
 
@@ -61,7 +61,7 @@ then run any number of specific suites, and report.
   
 == Matchers
 
-  * Core
+* Core
 
   - eql, be          ==
   - equal            ===
@@ -79,7 +79,7 @@ then run any number of specific suites, and report.
   - match            string should match regexp x
   - respond_to       property x should be a function
 
-  * jQuery
+* jQuery
 
   - have_selector    
   - have_text        
