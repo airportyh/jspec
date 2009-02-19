@@ -119,10 +119,10 @@ In most cases the default context will suffice, in combination with the
       
 == Todo
 
+* finish terminal usage
 * DOM sandbox
 * make default formatter easier to read ... float across width (optional?)
 * nesting
-* add more formatters
 * add pre-processing to prevent pollution of prototypes
 * add hooks throughout the system, allow formatters to access (spinner etc)
 * add spinner
