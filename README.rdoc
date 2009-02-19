@@ -131,9 +131,8 @@ into your custom context.
       
 == Todo
 
-* do not run each time .. exec .. fix
 * finish terminal usage
-* DOM sandbox
+* test sandbox visibility with display: none; and current
 * make default formatter easier to read ... float across width (optional?)
 * nesting
 * add pre-processing to prevent pollution of prototypes

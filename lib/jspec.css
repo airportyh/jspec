@@ -57,6 +57,7 @@
   padding: 0 1px;
 }
 .jspec-sandbox {
-  width: 0;
-  height: 0;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden;
 }
