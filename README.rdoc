@@ -133,6 +133,7 @@ into your custom context.
 
 * finish terminal usage
 * make default formatter easier to read ... float across width (optional?)
+* have report() pass options to formatter ...  display failures only etc
 * nesting
 * add pre-processing to prevent pollution of prototypes
 * add hooks throughout the system, allow formatters to access (spinner etc)
