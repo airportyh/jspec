@@ -14,9 +14,12 @@ end
 
 desc 'Test using SpiderMonkey'
 task :test do
-  specs = %w( lib/jspec lib/jspec.jquery spec/spec.core ).
-    map { |spec| 'load("' << spec << '.js")' }.join ';'
-  sh "js -e '#{specs}; JSpec.formatter = JSpec.TerminalFormatter; JSpec.run().report()'"
+  js = %{
+    load('lib/jspec.js')
+    JSpec.formatter = JSpec.TerminalFormatter
+    JSpec.exec('spec/spec.core.js')
+  }
+  sh %(js -e "#{js}")
 end
 
 desc 'Open for development in Firefox'
