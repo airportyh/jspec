@@ -132,13 +132,10 @@ into your custom context.
 == Todo
 
 * finish terminal usage
-* make default formatter easier to read ... float across width (optional?)
-* have report() pass options to formatter ...  display failures only etc
 * nesting
 * add pre-processing to prevent pollution of prototypes
-* add hooks throughout the system, allow formatters to access (spinner etc)
-* add spinner
-* add match method for using other matchers within your own
+* add formatter hooks to display spinner etc
+* add match method for using other matchers within others (for negation etc)
 * sass / compression option
 * clean up Rakefile
 * JSpec exceptions .. evaluations .. better debugging
