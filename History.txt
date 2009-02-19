@@ -1,4 +1,14 @@
 
+=== 0.3.0 / 2009-02-19
+
+* Added JSpec.match
+* Added options to report() which are passed to formatter
+* Added sandbox helpers (reg / jquery)
+* Added have_child and have_children
+* Added have_tag and have_tags
+* Changed exec to only load / eval file
+* Fixed parser token issue, was previously matching things like end() as literal end
+
 === 0.2.3 / 2009-02-18
 
 * Changed test dir to spec

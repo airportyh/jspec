@@ -7,7 +7,11 @@
 }
 #jspec-report {
 	padding: 60px;
+	height: 400px;
 	font: 12px "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
+}
+#jspec-report .suites {
+  padding-bottom: 50px;
 }
 #jspec-report .heading span {
 	margin-right: 15px;
@@ -22,33 +26,36 @@
 #jspec-report .heading span.failures em {
 	color: red;
 }
-#jspec-report h2 {
+#jspec-report .suite h2 {
 	margin-top: 25px;
 	margin-bottom: 10px;
 	font-size: 15px;
 }
-#jspec-report p {
+#jspec-report .suite p {
 	margin-top: 5px;
 	padding-left: 20px;
 }
-#jspec-report p.pass {
+#jspec-report .suite p.pass {
 	background: url(images/sprites.png) -12px -12px no-repeat;
 	color: green;
 }
-#jspec-report p.fail {
+#jspec-report .suite p.fail {
 	background: url(images/sprites.png) -12px -54px no-repeat;
 	color: red;
 }
-#jspec-report p.fail em {
+#jspec-report .suite p.fail em {
   font-size: 11px;
   font-style: normal;
   color: #9B9B9B;
 }
-#jspec-report p.requires-implementation {
+#jspec-report .suite p.requires-implementation {
   background: url(images/sprites.png) -12px -96px no-repeat;
   color: #9B9B9B;
 }
-#jspec-report span.assertion-count {
+#jspec-report .suite span.assertion-count {
   font-weight: bold;
   padding: 0 1px;
+}
+.jspec-sandbox {
+  display: none;
 }
