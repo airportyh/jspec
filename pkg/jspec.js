@@ -3,7 +3,7 @@
 
 var JSpec = {
   
-  version : '0.3.1',
+  version : '0.3.2',
   main    : this,
   suites  : {},
   stats   : { specs : 0, assertions : 0, failures : 0, passes : 0 },
@@ -25,7 +25,7 @@ var JSpec = {
     be_false        : "actual == false",
     be_type         : "typeof actual == expected",
     match           : "typeof actual == 'string' ? actual.match(expected) : false",
-    have_length_of  : "actual.length == expected",
+    have_length     : "actual.length == expected",
     respond_to      : "typeof actual[expected] == 'function'",
 
     include : { match : function(expected, actual) {

@@ -1,4 +1,10 @@
 
+=== 0.3.2 / 2009-02-19
+
+* Added TM bundle (go checkout my jspec.tmbundle repo on github)
+* Renamed have_length_of to have_length
+* 
+
 === 0.3.1 / 2009-02-19
 
 * Added jquery js to package
