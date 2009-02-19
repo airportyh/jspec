@@ -99,9 +99,14 @@ then run any number of specific suites, and report.
 
 == Helpers
 
-  * jQuery
-  
-  - element          same as invoking jQuery, just reads better and no need to worry about $ collisions
+  * Core
+
+  - sandbox     used to generate new DOM sandbox
+                
+  * jQuery      
+                
+  - sandbox     used to generate new DOM sandbox, using jQuery object
+  - element     same as invoking jQuery, just reads better and no need to worry about $ collisions
 
 == Custom Contexts
 
