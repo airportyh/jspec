@@ -131,14 +131,13 @@ into your custom context.
       
 == Todo
 
+* textmate bundle
+* add pre-processing to prevent pollution of prototypes
+* JSpec exceptions .. evaluations .. better debugging
+* add formatter hooks to display spinner etc
 * finish terminal usage
 * nesting
-* add pre-processing to prevent pollution of prototypes
-* add formatter hooks to display spinner etc
-* add match method for using other matchers within others (for negation etc)
 * clean up Rakefile
-* JSpec exceptions .. evaluations .. better debugging
-* textmate bundle
   
 == License 
 
