@@ -136,7 +136,6 @@ into your custom context.
 * add pre-processing to prevent pollution of prototypes
 * add formatter hooks to display spinner etc
 * add match method for using other matchers within others (for negation etc)
-* sass / compression option
 * clean up Rakefile
 * JSpec exceptions .. evaluations .. better debugging
 * textmate bundle
