@@ -61,7 +61,7 @@ then run any number of specific suites, and report.
   
 == Matchers
 
-* Core
+  * Core
 
   - eql, be          ==
   - equal            ===
@@ -79,7 +79,7 @@ then run any number of specific suites, and report.
   - match            string should match regexp x
   - respond_to       property x should be a function
 
-* jQuery
+  * jQuery
 
   - have_selector    
   - have_text        
