@@ -1,4 +1,20 @@
 
+describe 'jQuery helpers'
+
+  before
+    this.dom = this.sandbox()
+  end
+  
+  it 'should override sandbox, providing a jQuery object'
+    this.dom.jquery.should_be_a String
+  end
+  
+  it 'should add elements to a sandbox'
+    this.dom.prepend('em')
+  end
+  
+end
+
 describe 'jQuery matchers'
 
   before_each

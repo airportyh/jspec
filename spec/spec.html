@@ -8,6 +8,7 @@
 			function runSuites() {
 				JSpec
 				.exec('spec.core.js')
+				.exec('spec.core.dom.js')
 				.exec('spec.jquery.js')
 				.run()
 				.report()
