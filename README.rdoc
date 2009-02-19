@@ -87,6 +87,12 @@ then run any number of specific suites, and report.
   - have_value       
   - have_class
 
+== Helpers
+
+* jQuery
+
+  - element          same as invoking jQuery, just reads better and no need to worry about $ collisions
+
 == Custom Contexts
 
 Custom contexts can be applied to supply helper
