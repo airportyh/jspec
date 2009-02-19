@@ -12,6 +12,13 @@ task :package => [:clear] do
   end
 end
 
+desc 'Test using SpiderMonkey'
+task :test do
+  specs = %w( lib/jspec lib/jspec.jquery spec/spec.core ).
+    map { |spec| 'load("' << spec << '.js")' }.join ';'
+  sh "js -e '#{specs}; JSpec.formatter = JSpec.TerminalFormatter; JSpec.run().report()'"
+end
+
 desc 'Open for development in Firefox'
 task :open do
   sh 'open -a Firefox spec/spec.html'
