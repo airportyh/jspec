@@ -81,7 +81,8 @@ then run any number of specific suites, and report.
   
   * jQuery
   
-  - have_selector    
+  - have_tag       have exactly one tag   
+  - have_tags      have more than one tag
   - have_text        
   - have_value       
   - have_class

@@ -10,9 +10,14 @@ describe 'jQuery matchers'
     this.elem = $(html)
   end
   
-  it 'have_selector'
-    this.elem.should_have_selector('label')
-    this.elem.should_not_have_selector('input')
+  it 'have_tag'
+    this.elem.should_have_tag('label')
+    this.elem.should_not_have_tag('input')
+  end
+  
+  it 'have_tags'
+    this.elem.should_have_tags('option')
+    this.elem.should_not_have_tags('label')
   end
   
   it 'have_text'
