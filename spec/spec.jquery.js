@@ -2,7 +2,7 @@
 describe 'jQuery matchers'
 
   before_each
-    this.elem = $('<select class="save"><option value="yes">Yes</value></select>')
+    this.elem = $('<select class="save" style="display: none;"><option value="yes">Yes</value></select>')
   end
   
   it 'have_selector'
@@ -20,6 +20,14 @@ describe 'jQuery matchers'
   
   it 'have_class'
     this.elem.should_have_class('save')
+  end
+  
+  it 'be_visible'
+    this.element('#jspec-report').should_be_visible
+  end
+  
+  it 'be_hidden'
+    this.elem.should_be_hidden
   end
   
 end
