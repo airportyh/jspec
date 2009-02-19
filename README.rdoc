@@ -83,9 +83,10 @@ then run any number of specific suites, and report.
   
   - have_selector    
   - have_text        
-  - have_html        
   - have_value       
   - have_class
+  - be_visible
+  - be_hidden
 
 == Helpers
 

@@ -1,25 +1,25 @@
 
-describe 'jQuery matchers' 
+describe 'jQuery matchers'
+
+  before_each
+    this.elem = $('<select class="save"><option value="yes">Yes</value></select>')
+  end
   
   it 'have_selector'
-    $('<p class="article"><h2>Test</h2></p>').should_have_selector('h2')
-    this.element('<p class="article"><h2>Test</h2></p>').should_have_selector('h2')
+    this.elem.should_have_selector('option')
+    this.elem.should_not_have_selector('input')
   end
   
   it 'have_text'
-    this.element('<p>Test</p>').should_have_text('Test')
+    this.elem.should_have_text('Yes')
   end
   
-  it 'have_html'
-    this.element('<p><em>Test</em></p>').should_have_html('<em>Test</em>')
-  end
-    
   it 'have_value'
-    this.element('<input type="textfield" value="cookies">').should_have_value('cookies')
+    this.elem.children('option').should_have_value('yes')
   end
   
   it 'have_class'
-    this.element('<p class="foo bar"></p>').should_have_class('bar')
+    this.elem.should_have_class('save')
   end
   
 end
