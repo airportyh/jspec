@@ -79,7 +79,11 @@ then run any number of specific suites, and report.
   - respond_to       property x should be a function
 
 * jQuery
-  - Coming soon
+  - have_selector    
+  - have_text        
+  - have_html        
+  - have_value       
+  - have_class
 
 == Custom Contexts
 
@@ -106,9 +110,7 @@ the following code. Useful for quickly debugging or speeding up suites.
       
 == Todo
 
-* use single context ... not instance.. so it can be extended
 * DOM sandbox
-* contrib for jQuery specific matchers / dom extensions
 * make default formatter easier to read ... float across width (optional?)
 * nesting
 * add more formatters
