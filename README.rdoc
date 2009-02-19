@@ -61,8 +61,8 @@ then run any number of specific suites, and report.
   
 == Matchers
 
-* Core
-
+  * Core
+  
   - eql, be          ==
   - equal            ===
   - be_a, be_an      have constructor of x
@@ -78,9 +78,9 @@ then run any number of specific suites, and report.
   - include          include substring, array element, or hash key
   - match            string should match regexp x
   - respond_to       property x should be a function
-
-* jQuery
-
+  
+  * jQuery
+  
   - have_selector    
   - have_text        
   - have_html        
@@ -89,8 +89,8 @@ then run any number of specific suites, and report.
 
 == Helpers
 
-* jQuery
-
+  * jQuery
+  
   - element          same as invoking jQuery, just reads better and no need to worry about $ collisions
 
 == Custom Contexts
