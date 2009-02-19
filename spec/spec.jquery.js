@@ -13,7 +13,7 @@ describe 'jQuery helpers'
     this.dom.prepend('<em>test</em>').should_have_text 'test'
   end
   
-  it 'should retain visibility'
+  it 'should retain visibility within a sandbox'
     this.dom.children('em').hide().should_be_hidden
     this.dom.children('em').show().should_be_visible
   end
