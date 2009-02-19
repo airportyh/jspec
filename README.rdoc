@@ -100,7 +100,9 @@ Custom contexts can be applied to supply helper
 methods or properties to all subsequent bodies (other hooks, or specs).
 
 In most cases the default context will suffice, in combination with the
-'this' keyword.
+'this' keyword. Keep in mind that when replacing the default context
+you will loose functionality provided by it, unless you manually merge it
+into your custom context.
 
   ...
   before
