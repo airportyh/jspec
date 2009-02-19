@@ -10,7 +10,7 @@ describe 'jQuery helpers'
   end
   
   it 'should add elements to a sandbox'
-    this.dom.prepend('em')
+    this.dom.append('<em>test</em>').should_have_text 'test'
   end
   
 end
