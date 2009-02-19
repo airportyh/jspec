@@ -13,6 +13,11 @@ describe 'jQuery helpers'
     this.dom.prepend('<em>test</em>').should_have_text 'test'
   end
   
+  it 'should retain visibility'
+    this.dom.children('em').hide().should_be_hidden
+    this.dom.children('em').show().should_be_visible
+  end
+  
 end
 
 describe 'jQuery matchers'

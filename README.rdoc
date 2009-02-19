@@ -132,7 +132,6 @@ into your custom context.
 == Todo
 
 * finish terminal usage
-* test sandbox visibility with display: none; and current
 * make default formatter easier to read ... float across width (optional?)
 * nesting
 * add pre-processing to prevent pollution of prototypes
